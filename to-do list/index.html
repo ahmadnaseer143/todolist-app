@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>NAS TO-DO LIST</h2>
+    </header>
+    <form>
+        <input type="text" class="input">
+        <button class="button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">ALL</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">UnCompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-container">
+        <ul class="list">
+            <!--
+                will add this dynamically from java script
+                <div class="todo">
+                    <li></li>
+                    <button>Delete</button>
+                    <button>checked</button>
+                </div>
+            -->
+        </ul>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
